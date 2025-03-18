@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    background-color: #392e24;
+    color: white;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    background-color: #392e24;
+    padding: 10px;
+    text-align: center;
+}
+
+header p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 10px;
+    position: relative;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.logo1 {
+    height: 80px;
+    width: 80px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* Navbar Dropdown */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #392e24;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #392e24;
+}
+
+.menu .icn {
+    transition: 0.3s;
+}
+
+/* Dropdown Styling */
+.menu .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu .dropdown a {
+    padding: 8px 12px;
+    display: block;
+    color: #392e24;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu .dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show Dropdown on Hover */
+.menu:hover .dropdown {
+    display: block;
+}
+
+/* Icons */
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-container i {
+    font-size: 20px;
+    color: #392e24;
+}
+
+/* Hero Section */
+.hero1 {
+    width: 100%;
+    height: auto;
+}
+
+/* Video Section */
+.video {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+/* Products Section */
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px;
+    /* Adds space between images */
+    padding: 30px;
+}
+
+/* Individual Product */
+.child {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.child img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.child1 {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Hover Effect */
+.child:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Brand Section */
+.brands {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.topbrand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.child4 {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #392e24;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    color: #f8c146;
+}
+
+/* Footer Form */
+footer form input {
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+}
+
+footer form button {
+    margin-top: 8px;
+    width: 100%;
+}
+
+/* Social Icons */
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #f8c146;
+}
+
+/* Divider */
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Copyright */
+footer .text-center p {
+    margin: 10px 0 0;
+    font-size: 13px;
+}
+
+/* Sticky Header */
+.one {
+    position: sticky;
+    top: 0;
+    background: #392e24;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon-container {
+        gap: 10px;
+    }
+
+    .all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .child,
+    .child1 {
+        width: 90%;
+    }
+
+    .topbrand {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .child4 {
+        width: 150px;
+    }
+}
